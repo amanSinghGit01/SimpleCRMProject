@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<title>Employee info</title>
+</head>
+
+<body>
+	<p class="h4 mb-4 text-center">Employee Info</p>
+	<div class="container p-3 my-3 bg-dark text-white shadow-lg rounded">
+	
+		
+		
+		<div><lable>ID</lable>
+		<p class="bg-light text-black opacity-50 " th:text="${employee.id}"></p>
+		<lable>First Name</lable>
+		<p class="bg-light text-black opacity-50 " th:text="${employee.firstName}"></p>
+		<lable>Last Name</lable>
+		<p class="bg-light text-black opacity-50 " th:text="${employee.lastName}"></p>
+		<lable>Email</lable>
+		<p class="bg-light text-black opacity-50 " th:text="${employee.email}"></p>
+		<lable>Info</lable>
+		<p class="bg-light text-black opacity-50 " th:text="${employee.about}"></p>
+		
+		</div>
+		<a th:href="@{/employees/list}"> Back to Employee List</a>
+	
+	</div>
+
+	
+</body>
+</html>
